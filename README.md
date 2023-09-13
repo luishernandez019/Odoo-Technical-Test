@@ -1,2 +1,2 @@
-# odoo-technical-test
-A static HTML page built with Bootstrap for Odoo technical test and based in a mock up.
+# Odoo Technical Test
+A static HTML page built with Bootstrap for Odoo technical test and based in a previous given mock up.
