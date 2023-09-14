@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Odoo Home</title>
 </head>
 <body>
@@ -39,7 +38,7 @@
 
       <div class="nav-group">
         <a class="nav-link text-white" href="#">Sign in</a>
-        <button class="btn btn-light btn-sm" type="submit">
+        <button type="button" class="btn btn-light btn-sm px-3">
           <i class="bi bi-bag mr-1"></i> Buy now
         </button>
       </div>
@@ -47,18 +46,18 @@
   </nav>
 
   <div class="nav-border"></div>
-
-  <div class="container-fluid wrapper-header">
+    
+  <div class="wrapper-header bg-primary">
     <div class="row mx-0">
       <div class="col-md-auto">
         <h1 class="text-white mt-5">Development <br> done right</h1>
-        <p class="text-white py-3">Build a beautiful, modern website with <br> flexible components built from scratch.</p>
-        <button class="btn btn-light py-3 px-4 my-3" type="submit">
-          Get started <i class="bi bi-plus-lg ml-2"></i>
+        <p class="text-white font-weight-light py-3">Build a beautiful, modern website with <br> flexible components built from scratch.</p>
+        <button class="btn btn-light py-2 px-4 my-3" type="submit">
+          <h5 class="mr-2 d-inline">Get started <h4 class="d-inline">+</h4></h5>
         </button>
         <div class="row mt-4 d-flex align-items-center">
           <div class="col-md-auto">
-            <p class="text-white my-0">Trusted by:</p>
+            <h5 class="text-white my-0">Trusted by:</h5>
           </div>
           <div class="col px-0">
             <img class="mx-3" src="./img/google-white.svg" height="22" alt="">
@@ -68,34 +67,174 @@
           </div>
         </div>
       </div>
+
       <div class="col d-flex align-items-center justify-content-end pr-0">
         <div class="header-card">
           <div class="row d-flex align-items-center mb-3">
             <div class="col">
-              <h6>Manage cards</h6>
+              <h5>Manage cards</h5>
             </div>
             <div class="col d-flex justify-content-end">
-              <button class="btn btn-outline-dark btn-sm" type="submit">
-                Add new
+              <button type="button" class="btn btn-outline-dark btn-sm" style="border: 1px solid rgb(120, 120, 120, 0.4);">
+                <h5 class="py-1 px-1 my-0">Add new</h5>
               </button>
             </div>
           </div>
-          <div class="rounded-lg" style="height: 45%; width: 100%; background-color: #1E1247;">
+
+          <div class="bg-purple" style="height: fit-content; width: 100%; border-radius: 12px;">
             <div class="row d-flex align-items-center px-4 py-4">
               <div class="col">
                 <img src="./img/mastercard.svg" height="22" alt="">
               </div>
               <div class="col d-flex justify-content-end">
-                <h6><span class="badge badge-success py-2 px-2">Active</span></h6>
+                <span class="badge badge-success py-2 px-2 bg-teal h5">Active</span>
               </div>
             </div>
+            <h6 class="text-white font-weight-light text-monospace px-4">CARD NUMBER</h6>
+            <h3 class="text-white px-4">4358 - 7421 - 9256 - 6682</h3>
+            <div class="row d-flex mt-4">
+              <div class="col">
+                <h6 class="text-white font-weight-lighter text-monospace px-4">NAME</h6>
+                <h5 class="text-white px-4">John Snow</h5>
+              </div>
+              <div class="col">
+                <h6 class="text-white font-weight-lighter text-monospace px-4">EXPIRY DATE</h6>
+                <h5 class="text-white px-4">11/23</h5>
+              </div>
+            </div>
+            <div>&nbsp;</div>
           </div>
+
+          <div class="list-group list-group-flush mt-2">
+            <div class="list-group-item px-0">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Starbucks</h5>
+                <h5>$5,50 USD</h5>
+              </div>
+              <p class="mb-1 h5 text-muted">Pending - San Francisco, United States</p>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Nike Sports</h5>
+                <h5>$129,00 USD</h5>
+              </div>
+              <p class="mb-1 h5 text-muted">Pending - Lisbon, Portugal</p>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-link px-0 py-0 mt-3 position-absolute">
+            <h5 style="text-decoration: underline dotted;">View all ></h5>
+          </button>
+          <div>&nbsp;</div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <div style="margin: 0 15%;">
+    <div class="row d-flex align-items-center">
+      <div class="col">
+        <span class="badge badge-pill badge-warning text-white mb-3 px-2 py-2">Easy to install</span>
+        <h2 class="mb-4">Download, install and run.</h2>
+        <p class="h4 line-height opacity-low mb-5">
+          Get components and examples, including tons of variables <br>
+          that will help you grow your business.
+        </p>
+        <img src="./img/app_store-w.png" height="65" alt="">
+        <img src="./img/play_store-w.png" height="70" alt="">
+      </div>
+      <div class="col d-flex justify-content-end">
+        <img class="rounded-lg shadow-lg" src="./img/img_03.jpeg" height="325" alt="">
+        <button type="button" class="btn btn-light py-1 pl-3 pr-2 position-absolute" style="top: 20px; left: 8vw;">
+          <h5 class="mr-2 d-inline">Play video <i class="bi bi-play-fill"></i></h5>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-marine" style="margin: 5% 15%; padding: 4%; border-radius: 0 50px;">
+    <div class="row d-flex align-items-center">
+      <div class="col-8">
+        <h2 class="text-white opacity-vlow">Infinite solutions</h2>
+        <p class="text-white mt-3 opacity-low h4 line-height">
+          Intuitive markup, powerful and lightning-fast build tools, <br>
+          everything you need to turn your ideas into incredible products.
+        </p>
+      </div>
+      <div class="col d-flex h-100 justify-content-end">
+        <button type="button" class="btn btn-light px-4 mr-4">
+          Learn more <i class="bi bi-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper-footer bg-marine">
+    <div class="row d-flex align-items-center">
+      <div class="col">
+        <h2 class="text-white opacity-vlow">Brilliant solutions for your ideas</h2>
+        <h4 class="text-white mt-3 opacity-low">Modern-looking websites.</h4>
+      </div>
+      <div class="col d-flex h-100 justify-content-end">
+        <button type="button" class="btn btn-light px-4 mr-4">
+          <i class="bi bi-journal text-primary mr-2"></i> Documentation
+        </button>
+        <button type="button" class="btn btn-primary px-4 py-2">Purchase now</button>
+      </div>
+    </div>
+
+    <div class="footer-border"></div>
+
+    <div class="row">
+      <div class="col-6">
+        <img src="./img/odoo-white.svg" height="30" alt="">
+        <p class="text-white h5 my-4 opacity-medium" style="line-height: inherit;">
+          Odoo attempts to bring the best development <br>
+          experience to designers and developers by offering <br>
+          the tools needed for having a quick and solid start in <br>
+          most web projects.
+        </p>
+        <i class="bi bi-dribbble text-white mr-3"></i>
+        <i class="bi bi-github text-white"></i>
+        <i class="bi bi-instagram text-white mx-3"></i>
+        <i class="bi bi-facebook text-white"></i>
+      </div>
+      <div class="col">
+        <h4 class="text-white opacity-vlow mb-4">Account</h4>
+        <a href=""><h5 class="text-white opacity-medium">Profile</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Settings</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Billing</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Notifications</h5></a>
+      </div>
+      <div class="col">
+        <h4 class="text-white opacity-vlow mb-4">About</h4>
+        <a href=""><h5 class="text-white opacity-medium">Services</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Pricing</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Contact</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Careers</h5></a>
+      </div>
+      <div class="col">
+        <h4 class="text-white opacity-vlow mb-4">Company</h4>
+        <a href=""><h5 class="text-white opacity-medium">Community</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Help center</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Support</h5></a>
+      </div>
+    </div>
+
+    <div class="footer-border"></div>
+
+    <div class="row">
+      <div class="col">
+        <h5 class="text-white opacity-medium">© Odoo. All rights reserved</h5>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <a href=""><h5 class="text-white opacity-medium">Terms</h5></a>
+        <a href=""><h5 class="text-white opacity-medium mx-4">Privacy</h5></a>
+        <a href=""><h5 class="text-white opacity-medium">Cookies</h5></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

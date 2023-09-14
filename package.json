@@ -1,0 +1,14 @@
+{
+  "name": "odoo-technical-test",
+  "version": "1.0.0",
+  "description": "A static HTML page built with Bootstrap for Odoo technical test and based in a previous given mock up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Hernández",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.2"
+  }
+}

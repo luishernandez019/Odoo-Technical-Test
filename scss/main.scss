@@ -1,0 +1,96 @@
+$theme-colors: (
+  "primary": #1e8afb,
+  "teal": #20c997,
+  "purple": #1e1247,
+  "marine": #151348
+);
+
+$h2-font-size: 1rem * 1.75;
+$h3-font-size: 1rem * 1.25;
+$h4-font-size: 1rem;
+$h5-font-size: 1rem * 0.75;
+$h6-font-size: 1rem * 0.6;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-brand {
+  @media screen and (max-width: 768px) {
+    margin: auto 0 10px auto;
+   }
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+
+   @media screen and (max-width: 768px) {
+    margin: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+   }
+}
+
+.nav-group button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.nav-border {
+  position: absolute;
+  left: 15%;
+  align-self: center;
+  width: 70%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 10;
+}
+
+.wrapper-header {
+  display: grid;
+  align-items: center;
+	height: 85vh;
+  padding: 0 15%;
+	width: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
+}
+
+.header-card {
+  background-color: white;
+  height: fit-content;
+  width: 65%;
+  border-radius: 12px 12px 60px;
+  padding: 5%;
+}
+
+.wrapper-footer {
+  display: grid;
+  align-items: center;
+	height: fit-content;
+  padding: 7% 15% 1%;
+	width: 100%;
+	clip-path: polygon(0% calc(0% + 5vh), 100% 0%, 100% 100%, 0% 100%);
+}
+
+.footer-border {
+  width: 75%;
+  height: 1px;
+  margin: 4% auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 10;
+}
+
+.opacity-vlow {
+  opacity: 0.85;
+}
+
+.opacity-low {
+  opacity: 0.70;
+}
+
+.opacity-medium {
+  opacity: 0.5;
+}
+
+.line-height {
+  line-height: inherit;
+}
