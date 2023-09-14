@@ -62,6 +62,26 @@ $h6-font-size: 1rem * 0.6;
   padding: 5%;
 }
 
+.wrapper-awards {
+  align-items: start;
+  height: fit-content;
+  padding: 4% 0 12%;
+	width: 100%;
+  margin-bottom: 5%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vh), 0% 100%);
+  background-color: #FAFBFF;
+}
+
+.award-card {
+  position: relative;
+  top: 60px;
+}
+
+.award-card-container > div:hover {
+  cursor: pointer;
+  border: 1.5px solid #1e1247 !important;
+}
+
 .wrapper-footer {
   display: grid;
   align-items: center;
